@@ -11,7 +11,7 @@ title                    : "Personal Homepage"
 title_separator          : "-"
 name                     : &name "Marcos Canedo"
 description              : &description "personal description"
-url                      : [https://marcanedo.github.io](https://marcanedo.github.io)
+url                      : "https://marcanedo.github.io"
 baseurl                  : "" # the subpath of you
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
