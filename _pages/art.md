@@ -7,3 +7,5 @@ redirect_from:
   - /art/
   - /art.html
 ---
+
+I am interested in the intersection of arts and mathematics.
