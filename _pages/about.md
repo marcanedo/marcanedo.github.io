@@ -8,7 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in the mathematical physics group of [Prof. Volker
-Bach](http://www.iaa.tu-bs.de/vbach/) at the Technische Universität
-Braunschweig, Germany.  My main field of research are representability and
-correlations of fermion many-particle quantum systems.
+My research area is algebraic geometry; I combine techniques from birational geometry and deformation theory to construct and classify normal singular projective surfaces that appear under degenerations. My focus are degenerations that preserve the Betti numbers. The singularities involved in these degenerations have Milnor number equal to zero and are called rational homology disk (QHD) singularities. These kinds of constructions were motivated by the Rational Blow-Down of Fintushel – Stern and its generalization by J. Park to construct exotic differential structures on 4-manifolds. 
