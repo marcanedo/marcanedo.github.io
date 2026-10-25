@@ -1,0 +1,11 @@
+---
+title: "Rational Homology Disk Smoothing of W_{p,q,r} part 1"
+collection: talks
+type: "Seminar Talk"
+permalink: /talks/2025-05-29-rational-homology-disk-smoothing-of-w-p-
+venue: "Seminar of Algebraic Geometry, PUC"
+date: 2025-05-29
+location: "Santiago, Chile"
+---
+
+(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).
