@@ -8,4 +8,3 @@ date: 2025-10-30
 location: "Daejeon, South Korea"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

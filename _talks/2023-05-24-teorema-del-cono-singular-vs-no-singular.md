@@ -8,4 +8,3 @@ date: 2023-05-24
 location: "Santiago, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

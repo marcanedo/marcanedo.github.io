@@ -7,5 +7,3 @@ venue: "Institute for Basic Science"
 date: 2025-11-13
 location: "Daejeon, South Korea"
 ---
-
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

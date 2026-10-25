@@ -7,5 +7,3 @@ venue: "Math-Amsud School on Geometry"
 date: 2023-12-04
 location: "El Quisco, Chile"
 ---
-
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

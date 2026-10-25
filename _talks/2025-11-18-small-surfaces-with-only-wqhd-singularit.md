@@ -8,4 +8,3 @@ date: 2025-11-18
 location: "Temuco, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

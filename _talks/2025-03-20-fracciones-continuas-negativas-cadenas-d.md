@@ -7,5 +7,3 @@ venue: "Seminar of Algebraic Geometry, PUC"
 date: 2025-03-20
 location: "Santiago, Chile"
 ---
-
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

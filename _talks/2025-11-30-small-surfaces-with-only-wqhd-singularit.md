@@ -7,5 +7,3 @@ venue: "Conference: Algebraic Varieties and their Singularities, Universidad de 
 date: 2025-11-30
 location: "Talca, Chile"
 ---
-
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

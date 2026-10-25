@@ -7,5 +7,3 @@ venue: "Sesión de Geometría Algebraica, Sociedad Matemática de Chile"
 date: 2025-11-25
 location: "Vicuña, Chile"
 ---
-
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

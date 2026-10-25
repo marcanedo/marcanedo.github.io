@@ -8,4 +8,4 @@ date: 2025-12-08
 location: "Valparaíso, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).
+

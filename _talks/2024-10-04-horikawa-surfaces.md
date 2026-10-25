@@ -8,4 +8,3 @@ date: 2024-10-04
 location: "Talca, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).
