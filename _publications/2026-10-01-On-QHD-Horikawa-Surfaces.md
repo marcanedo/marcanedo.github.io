@@ -8,4 +8,3 @@ status: 'in progress'
 paperurl: ''
 citation: 'M. Canedo and G. Urzúa, “On ℚHD Horikawa Surfaces,” In preparation, 2026.'
 ---
-(Aquí puedes agregar un breve resumen o el estado actual de la investigación).

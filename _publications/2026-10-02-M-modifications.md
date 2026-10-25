@@ -8,4 +8,4 @@ status: 'in progress'
 paperurl: ''
 citation: 'M. Canedo, “M-modifications of two-dimensional log-canonical singularities,” In preparation, 2026.'
 ---
-(Aquí puedes agregar un breve resumen o el estado actual de la investigación).
+
