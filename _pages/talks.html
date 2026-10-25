@@ -5,58 +5,78 @@ permalink: /talks/
 author_profile: true
 ---
 
+<style>
+  /* Estilos para imitar el formato del CV en LaTeX */
+  .cv-list {
+    padding-left: 1.5em;
+    margin-bottom: 2em;
+  }
+  .cv-list li {
+    margin-bottom: 0.6em; /* Espaciado compacto pero legible */
+    line-height: 1.4;
+  }
+  .cv-link {
+    color: inherit; /* Quita el azul, hereda el color del texto normal */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    border-bottom: none;
+  }
+  .cv-link:hover {
+    text-decoration: underline; /* Solo se subraya sutilmente al pasar el mouse */
+  }
+</style>
+
 {% if site.talkmap_link == true %}
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<p style="text-decoration:underline; font-size: 0.9em;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 {% endif %}
 
 <h2>Invited Talks</h2>
 
-<ul>
+<ol reversed class="cv-list">
 {% for post in site.talks reversed %}
   {% if post.type == 'Invited Talk' %}
-    <li style="margin-bottom: 15px;">
-      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    <li>
+      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
     </li>
   {% endif %}
 {% endfor %}
-</ul>
+</ol>
 
 <h2>Seminar Talks</h2>
 
-<ul>
+<ol reversed class="cv-list">
 {% for post in site.talks reversed %}
   {% if post.type == 'Seminar Talk' %}
-    <li style="margin-bottom: 15px;">
-      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    <li>
+      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
     </li>
   {% endif %}
 {% endfor %}
-</ul>
+</ol>
 
 <h2>Contributed Talks</h2>
 
-<ul>
+<ol reversed class="cv-list">
 {% for post in site.talks reversed %}
   {% if post.type == 'Contributed Talk' %}
-    <li style="margin-bottom: 15px;">
-      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    <li>
+      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
     </li>
   {% endif %}
 {% endfor %}
-</ul>
+</ol>
 
 <h2>Poster Presentations</h2>
 
-<ul>
+<ol reversed class="cv-list">
 {% for post in site.talks reversed %}
   {% if post.type == 'Poster presentation' %}
-    <li style="margin-bottom: 15px;">
-      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    <li>
+      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
     </li>
   {% endif %}
 {% endfor %}
-</ul>
+</ol>
