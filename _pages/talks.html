@@ -6,11 +6,57 @@ author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
 {% endif %}
 
+## Invited Talks
+
+<ul>
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% if post.type == 'Invited Talk' %}
+    <li style="margin-bottom: 15px;">
+      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    </li>
+  {% endif %}
 {% endfor %}
+</ul>
+
+## Seminar Talks
+
+<ul>
+{% for post in site.talks reversed %}
+  {% if post.type == 'Seminar Talk' %}
+    <li style="margin-bottom: 15px;">
+      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+## Contributed Talks
+
+<ul>
+{% for post in site.talks reversed %}
+  {% if post.type == 'Contributed Talk' %}
+    <li style="margin-bottom: 15px;">
+      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+## Poster Presentations
+
+<ul>
+{% for post in site.talks reversed %}
+  {% if post.type == 'Poster presentation' %}
+    <li style="margin-bottom: 15px;">
+      <a href="{{ base_path }}{{ post.url }}"><strong>{{ post.title }}</strong></a><br>
+      <em>{{ post.venue }}</em> &mdash; {{ post.location }} ({{ post.date | date: "%B %Y" }})
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
