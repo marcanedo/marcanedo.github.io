@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2026-05-07-Rational-homology-disk-degenerations-of-elliptic-surfaces/
 date: 2026-05-07
 venue: 'arXiv preprint'
+status: 'submitted'
 paperurl: 'https://arxiv.org/abs/2605.06668'
 citation: 'M. Canedo and G. Urzúa, “Rational homology disk degenerations of elliptic surfaces,” arXiv preprint arXiv:2605.06668, May. 2026.'
 ---
