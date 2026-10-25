@@ -8,4 +8,3 @@ date: 2023-03-29
 location: "Santiago, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).

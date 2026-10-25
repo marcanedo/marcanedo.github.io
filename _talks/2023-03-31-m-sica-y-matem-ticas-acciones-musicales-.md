@@ -8,4 +8,4 @@ date: 2023-03-31
 location: "Santiago, Chile"
 ---
 
-(Aquí puedes agregar información adicional, adjuntar diapositivas o resúmenes de la presentación).
+In this talk it was presented some relationships between the structure of the harmony in music. The talk was inspired by https://arxiv.org/abs/0711.1873. 
