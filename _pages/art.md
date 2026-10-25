@@ -1,5 +1,5 @@
 ---
-permalink: /art
+permalink: /art/
 title: "Math & Art"
 excerpt: "Math & Art"
 author_profile: true
