@@ -12,16 +12,30 @@ author_profile: true
     margin-bottom: 2em;
   }
   .cv-list li {
-    margin-bottom: 0.6em; /* Espaciado compacto pero legible */
+    margin-bottom: 0.8em; /* Espaciado compacto pero legible */
     line-height: 1.4;
   }
   .cv-link {
-    color: inherit; /* Quita el azul, hereda el color del texto normal */
-    text-decoration: none; /* Quita el subrayado por defecto */
+    color: inherit; 
+    text-decoration: none; 
     border-bottom: none;
   }
   .cv-link:hover {
-    text-decoration: underline; /* Solo se subraya sutilmente al pasar el mouse */
+    text-decoration: underline; 
+  }
+  
+  /* El equivalente a \hfill en web */
+  .cv-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .cv-venue {
+    padding-right: 1em; /* Da un respiro si el texto es muy largo */
+  }
+  .cv-date {
+    white-space: nowrap; /* Evita que la fecha se rompa en dos lneas */
+    font-variant-numeric: tabular-nums; /* Alinea los nmeros perfectamente */
   }
 </style>
 
@@ -35,8 +49,13 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% if post.type == 'Invited Talk' %}
     <li>
-      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
+        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      </div>
     </li>
   {% endif %}
 {% endfor %}
@@ -48,8 +67,13 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% if post.type == 'Seminar Talk' %}
     <li>
-      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
+        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      </div>
     </li>
   {% endif %}
 {% endfor %}
@@ -61,8 +85,13 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% if post.type == 'Contributed Talk' %}
     <li>
-      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
+        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      </div>
     </li>
   {% endif %}
 {% endfor %}
@@ -74,8 +103,13 @@ author_profile: true
 {% for post in site.talks reversed %}
   {% if post.type == 'Poster presentation' %}
     <li>
-      <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a><br>
-      <em>{{ post.venue }}</em>, {{ post.location }} ({{ post.date | date: "%b %Y" }})
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
+        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      </div>
     </li>
   {% endif %}
 {% endfor %}
