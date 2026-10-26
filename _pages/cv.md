@@ -68,7 +68,7 @@ redirect_from:
   }
 </style>
 
-<div style="float: right; margin-top: -3em; position: relative; z-index: 10;">
+<div style="float: right; margin-top: -2.5em; position: relative; z-index: 10;">
   <a href="https://github.com/marcanedo/cv/blob/master/MarCanedo.pdf?raw=true" class="btn btn--primary">
     <i class="fas fa-file-pdf"></i> Download CV (PDF)
   </a>
