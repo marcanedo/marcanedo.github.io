@@ -43,6 +43,24 @@ author_profile: true
 <p style="text-decoration:underline; font-size: 0.9em;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 {% endif %}
 
+<h2>Contributed Talks</h2>
+
+<ol reversed class="cv-list">
+{% for post in site.talks reversed %}
+  {% if post.type == 'Contributed Talk' %}
+    <li>
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
+        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ol>
+
 <h2>Invited Talks</h2>
 
 <ol reversed class="cv-list">
@@ -66,24 +84,6 @@ author_profile: true
 <ol reversed class="cv-list">
 {% for post in site.talks reversed %}
   {% if post.type == 'Seminar Talk' %}
-    <li>
-      <div class="cv-title">
-        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
-      </div>
-      <div class="cv-details">
-        <span class="cv-venue"><em>{{ post.venue }}</em> &mdash; {{ post.location }}</span>
-        <span class="cv-date">{{ post.date | date: "%-d %b %Y" }}</span>
-      </div>
-    </li>
-  {% endif %}
-{% endfor %}
-</ol>
-
-<h2>Contributed Talks</h2>
-
-<ol reversed class="cv-list">
-{% for post in site.talks reversed %}
-  {% if post.type == 'Contributed Talk' %}
     <li>
       <div class="cv-title">
         <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
