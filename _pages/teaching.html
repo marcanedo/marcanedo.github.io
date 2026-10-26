@@ -5,8 +5,72 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+  /* Estilos para imitar el formato del CV en LaTeX */
+  .cv-list {
+    padding-left: 1.5em;
+    margin-bottom: 2em;
+  }
+  .cv-list li {
+    margin-bottom: 0.8em; 
+    line-height: 1.4;
+  }
+  .cv-link {
+    color: inherit; 
+    text-decoration: none; 
+    border-bottom: none;
+  }
+  .cv-link:hover {
+    text-decoration: underline; 
+  }
+  
+  /* El equivalente a \hfill en web */
+  .cv-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .cv-venue {
+    padding-right: 1em; 
+  }
+  .cv-date {
+    white-space: nowrap; 
+    font-variant-numeric: tabular-nums; 
+  }
+</style>
 
+<h2>Instructor</h2>
+
+<ol reversed class="cv-list">
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.type contains 'Instructor' %}
+    <li>
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.type }}</em>, {{ post.venue }}</span>
+        <span class="cv-date">{{ post.term }}</span>
+      </div>
+    </li>
+  {% endif %}
 {% endfor %}
+</ol>
+
+<h2>Teaching Assistant</h2>
+
+<ol reversed class="cv-list">
+{% for post in site.teaching reversed %}
+  {% if post.type == 'Teaching Assistant' %}
+    <li>
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em></span>
+        <span class="cv-date">{{ post.term }}</span>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ol>
