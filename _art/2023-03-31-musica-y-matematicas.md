@@ -8,4 +8,4 @@ date: 2023-03-31
 location: "Santiago, Chile"
 ---
 
-(Aquí puedes agregar el material sobre teoría de grupos aplicada a la música, partituras, videos o audios de la charla).
+This was an invited talk in the Club de Matemáticas UC. It was inspired by https://arxiv.org/abs/0711.1873.

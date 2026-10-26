@@ -8,4 +8,4 @@ date: 2024-09-25
 location: "Santiago, Chile"
 ---
 
-(Aquí puedes agregar fotos de las esculturas en arcilla, descripciones topológicas o material del workshop).
+A one-day workshop to develop the classical deformation of a torus into a cup.
