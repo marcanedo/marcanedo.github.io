@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching Experience"
 permalink: /teaching/
 author_profile: true
 ---
@@ -39,11 +39,29 @@ author_profile: true
   }
 </style>
 
+<h2>Summer Course Instructor</h2>
+
+<ol reversed class="cv-list">
+{% for post in site.teaching reversed %}
+  {% if post.type == 'Summer Course Instructor' %}
+    <li>
+      <div class="cv-title">
+        <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
+      </div>
+      <div class="cv-details">
+        <span class="cv-venue"><em>{{ post.venue }}</em></span>
+        <span class="cv-date">{{ post.term }}</span>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ol>
+
 <h2>Instructor</h2>
 
 <ol reversed class="cv-list">
 {% for post in site.teaching reversed %}
-  {% if post.type contains 'Instructor' %}
+  {% if post.type == 'Instructor' or post.type == 'Substitute Instructor' %}
     <li>
       <div class="cv-title">
         <a href="{{ base_path }}{{ post.url }}" class="cv-link"><strong>{{ post.title }}</strong></a>
