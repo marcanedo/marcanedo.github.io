@@ -68,11 +68,12 @@ redirect_from:
   }
 </style>
 
-<div style="text-align: right; margin-bottom: 2em;">
-  <a href="/assets/pdf/MarcosCanedo_CV.pdf" class="btn btn--primary" target="_blank">
-    <i class="fas fa-file-pdf"></i> Download Full CV (PDF)
+<div style="float: right; margin-top: -4em; position: relative; z-index: 10;">
+  <a href="https://github.com/marcanedo/cv/blob/master/MarCanedo.pdf?raw=true" class="btn btn--primary">
+    <i class="fas fa-file-pdf"></i> Download CV (PDF)
   </a>
 </div>
+<div style="clear: both;"></div>
 
 <div class="cv-section">
   <h2>Employment</h2>
